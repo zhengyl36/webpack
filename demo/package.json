@@ -1,0 +1,27 @@
+{
+  "name": "webpack-spritesmith",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "webpack": "webpack",
+    "dev": "webpack-dev-server --hot --inline",
+    "prod": "webpack --config webpack.config.js",
+    "spr": "webpack --config webpack.spr.config.js"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.0.0",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.30.1",
+    "html-withimg-loader": "^0.1.16",
+    "postcss-loader": "^2.0.10",
+    "px2rem-loader": "^0.1.7",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.8.1",
+    "webpack-spritesmith": "^0.3.3"
+  }
+}

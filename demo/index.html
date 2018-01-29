@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>webpack</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="spr/sprite-icons.css">
+</head>
+<body>
+    <div class="container">
+        <div class="icon-1"></div>
+        <div class="icon-2"></div>
+        <div class="icon-3"></div>
+    </div>
+
+    <script>
+        //屏幕适应
+        var evt = "onorientationchange" in window ? "orientationchange" : "resize";
+        window.addEventListener(evt, resizefn, false);//添加屏幕旋转事件
+        function resizefn() {
+            var html = document.documentElement;
+            var k = 750; //设计稿宽度
+            html.style.fontSize = html.clientWidth / k * 100 + "px";
+        }
+        resizefn(true);
+    </script>
+</body>
+</html>
