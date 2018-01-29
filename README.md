@@ -29,7 +29,7 @@
 
 `px2rem-loader` 用于将css转为rem
 
-####雪碧图
+#### 雪碧图
 
 通常，我习惯于将小图片放到目录spr/icons中，然后配置webpack.spr.config.js的配置，
 ```js
@@ -86,7 +86,7 @@ customTemplates: {
 
 雪碧图可以减少页面请求次数，记得生成的雪碧图仍然要再放到压缩软件中压缩
 
-####px转rem
+#### px转rem
 
 只需要在`extract-text-webpack-plugin`提取css时配置好
 
@@ -94,7 +94,7 @@ customTemplates: {
     
 即可
 
-####自动补全 `postcss-loader`
+#### 自动补全 `postcss-loader`
    
    同样需要配置 `postcss-loader` 同时添加postcss.config.js文件
    
