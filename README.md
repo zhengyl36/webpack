@@ -36,10 +36,10 @@
 通常，我习惯于将小图片放到目录spr/icons中，然后配置webpack.spr.config.js的配置，
 ```js
 //图片来源
- src: {
-                cwd: path.resolve(__dirname, './spr/icons'),
-                glob: '*.{png,gif,jpg}'
-       },
+src: {
+        cwd: path.resolve(__dirname, './spr/icons'),
+        glob: '*.{png,gif,jpg}'
+     },
 //生成配置
 target: {
             image: path.resolve(__dirname, './spr/sprite-icons.png'), //生成图片名字及位置
@@ -104,24 +104,24 @@ customTemplates: {
    module.exports = {
     plugins: {
         'autoprefixer': {browsers: 'last 5 version'}  //满足最新的五个版本
-   }
-  }
+    }
+   }
  ```
 
 webpack中配置plugins
 
  ```js   
-    new webpack.LoaderOptionsPlugin({
-                options: {
-                    postcss: function(){
-                        return [
-                            require("autoprefixer")({
-                                browsers: ['ie>=8','>1% in CN']
-                            })
-                        ]
-                    }
-                }
-            })
+   new webpack.LoaderOptionsPlugin({
+       options: {
+           postcss: function(){
+               return [
+                   require("autoprefixer")({
+                       browsers: ['ie>=8','>1% in CN']
+                   })
+               ]
+           }
+       }
+   })
 ```
 
 
