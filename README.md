@@ -92,7 +92,7 @@ customTemplates: {
 
 只需要在`extract-text-webpack-plugin`提取css时配置好
 
-     `px2rem-loader?remUnit=100&remPrecision=8&base=50&scale=2&minSize=1&ignore=border|margin|padding`
+  `px2rem-loader?remUnit=100&remPrecision=8&base=50&scale=2&minSize=1&ignore=border|margin|padding`
     
 即可
 
